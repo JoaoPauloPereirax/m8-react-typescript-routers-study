@@ -1,10 +1,12 @@
-import * as C from './App.styles';
-
+import {Routes, Route} from 'react-router-dom';
+import { Home } from './Pages/Home';
+import { About } from './Pages/About';
 function App() {
   return (
-    <C.Container>
-      <h1>Funciona</h1>
-    </C.Container>
+   <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/sobre' element={<About/>}/>      
+   </Routes>
   );
 }
 
